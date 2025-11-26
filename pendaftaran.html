@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - FESPA 11th</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-microchip"></i>
+                <span>FESPA 11th</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="indexke2.html">Home</a></li>
+                <li><a href="lomba.html">Daftar Lomba</a></li>
+                <li><a href="pendaftaran.html" class="active">Pendaftaran</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-edit"></i> Formulir Pendaftaran</h1>
+            <p>Lengkapi data di bawah ini untuk mendaftar FESPA 11th</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-wrapper">
+                <!-- Info Sidebar -->
+                <div class="registration-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Informasi Penting</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check"></i> Pastikan data yang diisi benar dan lengkap</li>
+                            <li><i class="fas fa-check"></i> Simpan bukti pembayaran dengan baik</li>
+                            <li><i class="fas fa-check"></i> Konfirmasi akan dikirim via email</li>
+                            <li><i class="fas fa-check"></i> Technical meeting info akan dikirim H-3</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Metode Pembayaran</h3>
+                        <div class="payment-methods">
+                            <div class="payment-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <strong>BCA</strong>
+                                    <p>1234567890</p>
+                                    <small>a.n. FESPA 11th</small>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <strong>Mandiri</strong>
+                                    <p>9876543210</p>
+                                    <small>a.n. FESPA 11th</small>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <i class="fas fa-wallet"></i>
+                                <div>
+                                    <strong>OVO / GoPay</strong>
+                                    <p>0812-3456-7890</p>
+                                    <small>a.n. FESPA 11th</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <h3>Timeline</h3>
+                        <div class="timeline-mini">
+                            <div class="timeline-mini-item">
+                                <strong>Pendaftaran</strong>
+                                <p>1 Des 2024 - 15 Jan 2025</p>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <strong>Pelaksanaan</strong>
+                                <p>1-2 Februari 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="registration-form-container">
+                    <form id="registrationForm" class="registration-form">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Data Peserta</h3>
+                            
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                                <input type="text" id="nama" name="nama" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">No. Telepon/WhatsApp <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="jenjang">Jenjang Pendidikan <span class="required">*</span></label>
+                                    <select id="jenjang" name="jenjang" required>
+                                        <option value="">Pilih Jenjang</option>
+                                        <option value="sd">SD</option>
+                                        <option value="smp">SMP</option>
+                                        <option value="sma">SMA</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="kelas">Kelas <span class="required">*</span></label>
+                                    <input type="text" id="kelas" name="kelas" placeholder="Contoh: 10" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sekolah">Asal Sekolah <span class="required">*</span></label>
+                                <input type="text" id="sekolah" name="sekolah" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="alamat">Alamat Lengkap</label>
+                                <textarea id="alamat" name="alamat" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Competition Selection -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-trophy"></i> Pilihan Lomba</h3>
+                            
+                            <div class="form-group">
+                                <label for="lomba">Kategori Lomba <span class="required">*</span></label>
+                                <select id="lomba" name="lomba" required>
+                                    <option value="">Pilih Kategori Lomba</option>
+                                    <optgroup label="SD - Akademik">
+                                        <option value="sd-ipa">Olimpiade IPA (Rp 40.000)</option>
+                                        <option value="sd-ips">Olimpiade IPS (Rp 40.000)</option>
+                                        <option value="sd-matematika">Olimpiade Matematika (Rp 40.000)</option>
+                                        <option value="sd-pai">Olimpiade PAI (Rp 40.000)</option>
+                                        <option value="sd-tahfidz">Olimpiade Tahfidz/Sederajat (Rp 40.000)</option>
+                                    </optgroup>
+                                    <optgroup label="SMP - Akademik">
+                                        <option value="smp-ipa">Olimpiade IPA (Rp 50.000)</option>
+                                        <option value="smp-ips">Olimpiade IPS (Rp 50.000)</option>
+                                        <option value="smp-matematika">Olimpiade Matematika (Rp 50.000)</option>
+                                        <option value="smp-pai">Olimpiade PAI (Rp 50.000)</option>
+                                    </optgroup>
+                                    <optgroup label="SMP - Non-Akademik">
+                                        <option value="smp-puisi">Lomba Baca Puisi (Rp 50.000)</option>
+                                        <option value="smp-storytelling">Story Telling (Rp 50.000)</option>
+                                        <option value="smp-mhq">Musabaqah Hifdzil Qur'an (MHQ) (Rp 50.000)</option>
+                                    </optgroup>
+                                    <optgroup label="SMA - Akademik">
+                                        <option value="sma-fisika">Olimpiade Fisika (Rp 60.000)</option>
+                                        <option value="sma-kimia">Olimpiade Kimia (Rp 60.000)</option>
+                                        <option value="sma-biologi">Olimpiade Biologi (Rp 60.000)</option>
+                                        <option value="sma-ekonomi">Olimpiade Ekonomi (Rp 60.000)</option>
+                                        <option value="sma-matematika">Olimpiade Matematika (Rp 60.000)</option>
+                                        <option value="sma-astronomi">Olimpiade Astronomi (Rp 60.000)</option>
+                                        <option value="sma-geografi">Olimpiade Geografi (Rp 60.000)</option>
+                                        <option value="sma-kebumian">Olimpiade Kebumian (Rp 60.000)</option>
+                                        <option value="sma-komputer">Olimpiade Komputer (Rp 60.000)</option>
+                                    </optgroup>
+                                    <optgroup label="SMA - Non-Akademik">
+                                        <option value="sma-akustik">Akustik (Rp 100.000)</option>
+                                        <option value="sma-speech">Pidato Bahasa Inggris (Speech) (Rp 60.000)</option>
+                                        <option value="sma-puisi">Lomba Baca Puisi (Rp 60.000)</option>
+                                        <option value="sma-volly">Tournament Volly (Siswa Putra SMA) (Rp 200.000)</option>
+                                        <option value="sma-smantripa">Smantripa CUP (Siswa SMA) (Rp 300.000)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipe">Tipe Pendaftaran <span class="required">*</span></label>
+                                <select id="tipe" name="tipe" required>
+                                    <option value="">Pilih Tipe</option>
+                                    <option value="individu">Individu</option>
+                                    <option value="tim">Tim</option>
+                                </select>
+                            </div>
+
+                            <div id="teamSection" class="team-section" style="display: none;">
+                                <div class="form-group">
+                                    <label for="namaTeam">Nama Tim <span class="required">*</span></label>
+                                    <input type="text" id="namaTeam" name="namaTeam">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="jumlahAnggota">Jumlah Anggota Tim <span class="required">*</span></label>
+                                    <input type="number" id="jumlahAnggota" name="jumlahAnggota" min="2" max="5">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="anggotaTeam">Nama Anggota Tim (pisahkan dengan koma)</label>
+                                    <textarea id="anggotaTeam" name="anggotaTeam" rows="3" placeholder="Nama 1, Nama 2, Nama 3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Information -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-credit-card"></i> Informasi Pembayaran</h3>
+                            
+                            <div class="form-group">
+                                <label for="metodePembayaran">Metode Pembayaran <span class="required">*</span></label>
+                                <select id="metodePembayaran" name="metodePembayaran" required>
+                                    <option value="">Pilih Metode</option>
+                                    <option value="bca">BCA - 1234567890</option>
+                                    <option value="mandiri">Mandiri - 9876543210</option>
+                                    <option value="ovo">OVO - 0812-3456-7890</option>
+                                    <option value="gopay">GoPay - 0812-3456-7890</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="buktiPembayaran">Upload Bukti Pembayaran <span class="required">*</span></label>
+                                <div class="file-upload">
+                                    <input type="file" id="buktiPembayaran" name="buktiPembayaran" accept="image/*,.pdf" required>
+                                    <label for="buktiPembayaran" class="file-upload-label">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>Pilih File atau Drag & Drop</span>
+                                        <small>Format: JPG, PNG, PDF (Max 5MB)</small>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="namaPengirim">Nama Pengirim <span class="required">*</span></label>
+                                <input type="text" id="namaPengirim" name="namaPengirim" required>
+                            </div>
+                        </div>
+
+                        <!-- Agreement -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="agreement" name="agreement" required>
+                                    <span>Saya menyatakan bahwa data yang saya isi adalah benar dan saya bersedia mengikuti seluruh peraturan FESPA 11th <span class="required">*</span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Reset Form
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Kirim Pendaftaran
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-microchip"></i> FESPA 11th</h3>
+                    <p>Festival Smantripa - Inovasi Digital, Prestasi Optimal</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lomba.html">Daftar Lomba</a></li>
+                        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@fespa11th.com</li>
+                        <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> SMA Negeri 3 Semarang</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FESPA 11th - Festival Smantripa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

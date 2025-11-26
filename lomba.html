@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Lomba - FESPA 11th</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-microchip"></i>
+                <span>FESPA 11th</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="indexke2.html">Home</a></li>
+                <li><a href="lomba.html" class="active">Daftar Lomba</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-trophy"></i> Daftar Lomba</h1>
+            <p>Pilih kategori lomba yang sesuai dengan minat dan bakatmu</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-list"></i> Semua
+                </button>
+                <button class="filter-btn" data-filter="sd">
+                    <i class="fas fa-child"></i> SD
+                </button>
+                <button class="filter-btn" data-filter="smp">
+                    <i class="fas fa-user-graduate"></i> SMP
+                </button>
+                <button class="filter-btn" data-filter="sma">
+                    <i class="fas fa-graduation-cap"></i> SMA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competition Section -->
+    <section class="competitions">
+        <div class="container">
+            <!-- SD Competitions -->
+            <div class="competition-category">
+                <h2 class="category-title"><i class="fas fa-child"></i> Tingkat SD</h2>
+                <div class="competition-grid">
+                    <div class="competition-card" data-category="sd" data-lomba-id="sd-ipa">
+                        <div class="card-icon academic">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Olimpiade IPA</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi Ilmu Pengetahuan Alam untuk siswa SD</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 40.000</li>
+                        </ul>
+                        <a href="pendaftaran.html?lomba=sd-ipa" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sd" data-lomba-id="sd-ips">
+                        <div class="card-icon academic">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Olimpiade IPS</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi Ilmu Pengetahuan Sosial untuk siswa SD</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 40.000</li>
+                        </ul>
+                        <a href="pendaftaran.html?lomba=sd-ips" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sd" data-lomba-id="sd-matematika">
+                        <div class="card-icon academic">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Olimpiade Matematika</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi matematika untuk mengasah kemampuan logika dan berhitung</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 40.000</li>
+                        </ul>
+                        <a href="pendaftaran.html?lomba=sd-matematika" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sd" data-lomba-id="sd-pai">
+                        <div class="card-icon academic">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <h3>Olimpiade PAI</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi Pendidikan Agama Islam untuk siswa SD</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 40.000</li>
+                        </ul>
+                        <a href="pendaftaran.html?lomba=sd-pai" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sd" data-lomba-id="sd-tahfidz">
+                        <div class="card-icon academic">
+                            <i class="fas fa-quran"></i>
+                        </div>
+                        <h3>Olimpiade Tahfidz/Sederajat</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi menghafal Al-Qur'an untuk siswa SD</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 40.000</li>
+                        </ul>
+                        <a href="pendaftaran.html?lomba=sd-tahfidz" class="btn btn-small">Daftar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SMP Competitions -->
+            <div class="competition-category">
+                <h2 class="category-title"><i class="fas fa-user-graduate"></i> Tingkat SMP</h2>
+                <div class="competition-grid">
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon academic">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Olimpiade IPA</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi Ilmu Pengetahuan Alam untuk siswa SMP</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon academic">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Olimpiade IPS</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi Ilmu Pengetahuan Sosial untuk siswa SMP</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon academic">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Olimpiade Matematika</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Tantangan matematika tingkat menengah dengan soal yang lebih kompleks</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon academic">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <h3>Olimpiade PAI</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi Pendidikan Agama Islam untuk siswa SMP</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Lomba Baca Puisi</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Ekspresikan jiwa seni melalui pembacaan puisi</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Story Telling</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Bercerita dengan percaya diri di hadapan juri</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="smp">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-quran"></i>
+                        </div>
+                        <h3>Musabaqah Hifdzil Qur'an (MHQ)</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Kompetisi menghafal dan membaca Al-Qur'an dengan tartil</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 50.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SMA Competitions -->
+            <div class="competition-category">
+                <h2 class="category-title"><i class="fas fa-graduation-cap"></i> Tingkat SMA</h2>
+                <div class="competition-grid">
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Olimpiade Fisika</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Eksplorasi mendalam konsep fisika tingkat advanced</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h3>Olimpiade Kimia</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Uji pengetahuan kimia dari teori hingga praktik</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Olimpiade Biologi</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Jelajahi dunia kehidupan dan bioteknologi</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Olimpiade Ekonomi</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi ekonomi untuk memahami pasar dan bisnis</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Olimpiade Matematika</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Tantangan matematika tingkat lanjut dengan problem solving</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <h3>Olimpiade Astronomi</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Jelajahi alam semesta dan sistem tata surya</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Olimpiade Geografi</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi geografi tentang bumi dan lingkungannya</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Olimpiade Kebumian</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Studi tentang struktur bumi, geologi, dan fenomena alam</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon academic">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Olimpiade Komputer</h3>
+                        <span class="badge academic">Akademik</span>
+                        <p>Kompetisi programming dan algoritma untuk siswa SMA</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-guitar"></i>
+                        </div>
+                        <h3>Akustik</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Kompetisi musik akustik untuk siswa berbakat</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Tim (2-5 orang)</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 100.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <h3>Pidato Bahasa Inggris (Speech)</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Asah kemampuan public speaking dalam bahasa Inggris</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Lomba Baca Puisi</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Ekspresikan jiwa seni melalui pembacaan puisi</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Individu</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 60.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-volleyball-ball"></i>
+                        </div>
+                        <h3>Tournament Volly (Siswa Putra SMA)</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Kompetisi bola voli untuk siswa putra SMA</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Tim (6-8 orang)</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 200.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+
+                    <div class="competition-card" data-category="sma">
+                        <div class="card-icon non-academic">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Smantripa CUP (Siswa SMA)</h3>
+                        <span class="badge non-academic">Non-Akademik</span>
+                        <p>Turnamen sepak bola untuk siswa SMA se-Indonesia</p>
+                        <ul class="card-details">
+                            <li><i class="fas fa-users"></i> Tim (10-15 orang)</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Rp 300.000</li>
+                        </ul>
+                        <a href="pendaftaran.html" class="btn btn-small">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Sudah Menemukan Lomba yang Cocok?</h2>
+            <p>Daftarkan dirimu sekarang sebelum kuota penuh!</p>
+            <a href="pendaftaran.html" class="btn btn-primary btn-large">
+                <i class="fas fa-rocket"></i> Daftar Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-microchip"></i> FESPA 11th</h3>
+                    <p>Festival Smantripa - Inovasi Digital, Prestasi Optimal</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lomba.html">Daftar Lomba</a></li>
+                        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@fespa11th.com</li>
+                        <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> SMA Negeri 3 Semarang</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FESPA 11th - Festival Smantripa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

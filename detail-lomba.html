@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Lomba - FESPA 11th</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-microchip"></i>
+                <span>FESPA 11th</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="indexke2.html">Home</a></li>
+                <li><a href="lomba.html" class="active">Daftar Lomba</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 id="lombaTitle"><i class="fas fa-trophy"></i> Loading...</h1>
+            <p id="lombaSubtitle">Memuat informasi lomba...</p>
+        </div>
+    </section>
+
+    <!-- Detail Section -->
+    <section class="detail-lomba-section">
+        <div class="container">
+            <div class="detail-wrapper">
+                <!-- Poster -->
+                <div class="detail-poster">
+                    <div class="poster-container">
+                        <img id="posterImage" src="poster-placeholder.jpg" alt="Poster Lomba" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 600%22%3E%3Crect fill=%22%231e2749%22 width=%22400%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 fill=%22%2300d4ff%22 font-size=%2224%22 font-family=%22Arial%22%3EPoster Belum Tersedia%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <div class="poster-info">
+                        <div class="info-badge">
+                            <i class="fas fa-tag"></i>
+                            <span id="badgeType">Akademik</span>
+                        </div>
+                        <div class="info-price">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span id="priceText">Rp 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail Info -->
+                <div class="detail-info">
+                    <div class="back-button">
+                        <a href="lomba.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Kembali ke Daftar Lomba
+                        </a>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2>Informasi Lomba</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>Tipe Peserta</strong>
+                                    <p id="tipePeserta">-</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <strong>Jenjang</strong>
+                                    <p id="jenjangInfo">-</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <strong>Biaya Pendaftaran</strong>
+                                    <p id="biayaInfo">-</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Pelaksanaan</strong>
+                                    <p>1-2 Februari 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2>Deskripsi Lomba</h2>
+                        <div id="deskripsiLomba" class="deskripsi-content">
+                            <p>Memuat deskripsi...</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2>Ketentuan Lomba</h2>
+                        <div id="ketentuanLomba" class="ketentuan-content">
+                            <ul>
+                                <li>Memuat ketentuan...</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2>Hadiah</h2>
+                        <div class="hadiah-grid">
+                            <div class="hadiah-item gold">
+                                <i class="fas fa-trophy"></i>
+                                <h3>Juara 1</h3>
+                                <p>Piala + Sertifikat + Hadiah</p>
+                            </div>
+                            <div class="hadiah-item silver">
+                                <i class="fas fa-medal"></i>
+                                <h3>Juara 2</h3>
+                                <p>Piala + Sertifikat + Hadiah</p>
+                            </div>
+                            <div class="hadiah-item bronze">
+                                <i class="fas fa-award"></i>
+                                <h3>Juara 3</h3>
+                                <p>Piala + Sertifikat + Hadiah</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="#" id="btnDaftar" class="btn btn-primary btn-large">
+                            <i class="fas fa-edit"></i> Daftar Lomba Ini
+                        </a>
+                        <a href="kontak.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-question-circle"></i> Hubungi Panitia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-microchip"></i> FESPA 11th</h3>
+                    <p>Festival Smantripa - Inovasi Digital, Prestasi Optimal</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lomba.html">Daftar Lomba</a></li>
+                        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@fespa11th.com</li>
+                        <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> SMA Negeri 3 Semarang</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FESPA 11th - Festival Smantripa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lomba-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Load lomba detail from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const lombaId = urlParams.get('id');
+
+        if (lombaId && lombaData[lombaId]) {
+            const lomba = lombaData[lombaId];
+            
+            // Update page content
+            document.getElementById('lombaTitle').innerHTML = `<i class="${lomba.icon}"></i> ${lomba.nama}`;
+            document.getElementById('lombaSubtitle').textContent = lomba.kategori;
+            document.getElementById('posterImage').src = lomba.poster || 'poster-placeholder.jpg';
+            document.getElementById('badgeType').textContent = lomba.tipe;
+            document.getElementById('priceText').textContent = lomba.harga;
+            document.getElementById('tipePeserta').textContent = lomba.peserta;
+            document.getElementById('jenjangInfo').textContent = lomba.jenjang.toUpperCase();
+            document.getElementById('biayaInfo').textContent = lomba.harga;
+            document.getElementById('deskripsiLomba').innerHTML = lomba.deskripsi;
+            document.getElementById('ketentuanLomba').innerHTML = lomba.ketentuan;
+            
+            // Update page title
+            document.title = `${lomba.nama} - FESPA 11th`;
+            
+            // Update daftar button link
+            document.getElementById('btnDaftar').href = `pendaftaran.html?lomba=${lombaId}`;
+            
+            // Update badge style
+            const badge = document.getElementById('badgeType');
+            if (lomba.tipe === 'Non-Akademik') {
+                badge.parentElement.style.background = 'rgba(255, 0, 110, 0.2)';
+                badge.parentElement.style.borderColor = 'var(--accent-color)';
+                badge.style.color = 'var(--accent-color)';
+            }
+        } else {
+            // Lomba not found
+            document.getElementById('lombaTitle').innerHTML = '<i class="fas fa-exclamation-triangle"></i> Lomba Tidak Ditemukan';
+            document.getElementById('lombaSubtitle').textContent = 'Lomba yang Anda cari tidak tersedia';
+            document.querySelector('.detail-lomba-section').innerHTML = `
+                <div class="container">
+                    <div class="error-message" style="text-align: center; padding: 4rem 0;">
+                        <i class="fas fa-sad-tear" style="font-size: 5rem; color: var(--text-muted); margin-bottom: 2rem;"></i>
+                        <h2>Lomba Tidak Ditemukan</h2>
+                        <p style="margin-bottom: 2rem;">Maaf, lomba yang Anda cari tidak tersedia atau sudah tidak aktif.</p>
+                        <a href="lomba.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i> Kembali ke Daftar Lomba
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
+

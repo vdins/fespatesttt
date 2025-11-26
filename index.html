@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - FESPA 11th</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: #0a0e27;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .splash-container {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0e27 0%, #131842 50%, #1a1f3a 100%);
+            z-index: 10000;
+        }
+        
+        /* Animated Background */
+        .splash-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(123, 44, 191, 0.15) 0%, transparent 50%);
+            animation: bgPulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes bgPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        /* Circuit Board Animation */
+        .circuit-board {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: circuit 20s linear infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes circuit {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        /* Logo Container */
+        .logo-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            animation: fadeInScale 1s ease-out;
+        }
+        
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* Logo Image */
+        .logo-wrapper {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+        }
+        
+        .logo-wrapper:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .logo-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.6));
+            animation: logoGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes logoGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.6));
+            }
+            50% {
+                filter: drop-shadow(0 0 50px rgba(0, 212, 255, 1)) 
+                        drop-shadow(0 0 80px rgba(123, 44, 191, 0.8));
+            }
+        }
+        
+        /* Glow Ring */
+        .glow-ring {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            border-top-color: #00d4ff;
+            border-right-color: #7b2cbf;
+            border-bottom-color: #ff006e;
+            border-left-color: #00d4ff;
+            animation: rotate 3s linear infinite;
+            opacity: 0.6;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .glow-ring:nth-child(2) {
+            width: 480px;
+            height: 480px;
+            animation-duration: 4s;
+            animation-direction: reverse;
+            opacity: 0.4;
+        }
+        
+        /* Text */
+        .splash-text {
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .splash-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #00d4ff;
+            text-shadow: 
+                0 0 10px rgba(0, 212, 255, 0.8),
+                0 0 20px rgba(0, 212, 255, 0.6),
+                0 0 30px rgba(0, 212, 255, 0.4);
+            margin-bottom: 1rem;
+            animation: textGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes textGlow {
+            0%, 100% {
+                text-shadow: 
+                    0 0 10px rgba(0, 212, 255, 0.8),
+                    0 0 20px rgba(0, 212, 255, 0.6);
+            }
+            50% {
+                text-shadow: 
+                    0 0 20px rgba(0, 212, 255, 1),
+                    0 0 40px rgba(0, 212, 255, 0.8),
+                    0 0 60px rgba(123, 44, 191, 0.6);
+            }
+        }
+        
+        .splash-subtitle {
+            font-size: 1.5rem;
+            color: #b8c1ec;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        
+        .click-instruction {
+            font-size: 1.2rem;
+            color: #7c8db5;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.05);
+            }
+        }
+        
+        .click-instruction i {
+            font-size: 1.5rem;
+            color: #00d4ff;
+        }
+        
+        /* Particles */
+        .particle {
+            position: absolute;
+            background: #00d4ff;
+            border-radius: 50%;
+            opacity: 0;
+            animation: particleFloat 4s ease-in-out infinite;
+        }
+        
+        @keyframes particleFloat {
+            0% {
+                opacity: 0;
+                transform: translateY(0) scale(0);
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) scale(1);
+            }
+        }
+        
+        /* Fade Out Animation */
+        .fade-out {
+            animation: fadeOut 0.8s ease-out forwards;
+        }
+        
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                transform: scale(1.2);
+            }
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .logo-wrapper {
+                width: 280px;
+                height: 280px;
+            }
+            
+            .glow-ring {
+                width: 320px;
+                height: 320px;
+            }
+            
+            .glow-ring:nth-child(2) {
+                width: 350px;
+                height: 350px;
+            }
+            
+            .splash-title {
+                font-size: 2rem;
+            }
+            
+            .splash-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .click-instruction {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container" id="splashScreen">
+        <div class="circuit-board"></div>
+        
+        <div class="logo-container">
+            <div class="logo-wrapper">
+                <div class="glow-ring"></div>
+                <div class="glow-ring"></div>
+                <img src="logo-fespa.png" alt="FESPA 11th Logo" id="logoImage">
+            </div>
+            
+            <div class="splash-text">
+                <h1 class="splash-title">FESPA 11th</h1>
+                <p class="splash-subtitle">Festival Smantripa</p>
+                <div class="click-instruction">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span>Klik untuk masuk</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Particles -->
+        <div class="particle" style="left: 10%; width: 4px; height: 4px; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; width: 6px; height: 6px; animation-delay: 0.5s;"></div>
+        <div class="particle" style="left: 30%; width: 3px; height: 3px; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 40%; width: 5px; height: 5px; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 50%; width: 4px; height: 4px; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 60%; width: 6px; height: 6px; animation-delay: 0.8s;"></div>
+        <div class="particle" style="left: 70%; width: 3px; height: 3px; animation-delay: 1.3s;"></div>
+        <div class="particle" style="left: 80%; width: 5px; height: 5px; animation-delay: 1.8s;"></div>
+        <div class="particle" style="left: 90%; width: 4px; height: 4px; animation-delay: 2.3s;"></div>
+    </div>
+    
+    <script>
+        const splashScreen = document.getElementById('splashScreen');
+        const logoImage = document.getElementById('logoImage');
+        
+        // Handle image load error - show fallback
+        logoImage.onerror = function() {
+            // If logo image not found, hide the image and keep the text
+            logoImage.style.display = 'none';
+        };
+        
+        // Enter website function
+        function enterWebsite() {
+            // Add fade out animation
+            splashScreen.classList.add('fade-out');
+            
+            // Set flag in sessionStorage to trigger audio in index.html
+            sessionStorage.setItem('playWelcomeAudio', 'true');
+            
+            // Navigate to main website after animation
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 800);
+        }
+        
+        // Click anywhere to enter
+        splashScreen.addEventListener('click', enterWebsite);
+        
+        // Also allow Enter key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                enterWebsite();
+            }
+        });
+        
+        // Create more particles dynamically
+        function createParticles() {
+            const container = splashScreen;
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.width = (Math.random() * 4 + 2) + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 4 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                container.appendChild(particle);
+            }
+        }
+        
+        createParticles();
+    </script>
+</body>
+</html>
+
